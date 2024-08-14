@@ -10,7 +10,7 @@
 10. Declarar un array de números y utilizar un bucle para imprimir la suma de todos los elementos.
 11. Utilizar una estructura de control para determinar si un número es positivo, negativo o cero.
 12. Crear una función que acepte un array de números y devuelva su suma.
-13. Declarar una variable y utilizar un bucle para imprimir todos los números pares del 1 al 20.
+13. Utilizar un bucle para imprimir todos los números pares del 1 al 20.
 14. Crear una función que devuelva la longitud de una cadena de texto.
 15. Utilizar un bucle para imprimir los números del 20 al 1 en orden descendente.
 16. Declarar dos variables y utilizar un bucle para imprimir todos los números entre ellas.
