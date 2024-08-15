@@ -197,3 +197,101 @@ for (let index = 1; index <= 20; index++) {
         console.log(index)
     }
 }
+// FUNCIONES
+function suma(a,b) {
+    return a + b;
+}
+console.log(suma(3,40))
+
+function resta(a,b) {
+    return a - b;
+}
+console.log(resta(10,5))
+//respuesta 21
+
+function multiplica(a,b) {
+    return a * b;
+}
+console.log(multiplica(5,3))
+//RESPUESTA 22
+
+function mayorDeTres(n1,n2,n3) {
+
+    if(n1 >=n2 && n1 >=n3) {
+        return n1;
+    } else if(n2 >=n1 && n2>=n3) {
+        return n2;
+    } else {
+        return n3;
+    }
+} 
+console.log(mayorDeTres(7,29,2))
+//respuesta 23
+
+function longitudCadena(texto) {
+    return texto.length
+}
+console.log(longitudCadena("rick and morty"))
+//respuesta 24
+
+function esPar(num) {
+    
+    if(num % 2 === 0){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+console.log(esPar(32))
+//RESPUESTA 25
+function esPalindromo(palabra) {
+    let invertida= ""
+    for(let i=palabra.length-1; i >= 0; i--) {
+        invertida += palabra[i]
+    }
+
+    return palabra.toLowerCase() == invertida.toLowerCase() ? true : false
+    
+}
+console.log(esPalidromo("OSO"))
+ //RESPUESTA 26 PENDIENTE
+
+ function factorial (x) {
+    
+    let resultadof = 1
+    for(let i=1; i <=x; i++) {
+        resultadof *= i;
+    } return resultadof;
+ }
+ console.log(factorial(5))
+ //RESPUESTA 27
+
+ function celsiusAFahrenheit(celcius) {
+    return (celcius*1.8) + 32
+ }
+ console.log(celsiusAFahrenheit(0))
+ //RESPUESTA 28
+
+ function maximoComunDivisor(a, b) {
+    let menor = Math.min(a, b);
+
+    for (let i = menor; i > 0; i--) {
+        if (a % i === 0 && b % i === 0) {
+            return i;
+        }
+    }
+}
+console.log(maximoComunDivisor(48, 18))
+//respuesta 29
+
+function generarContrasena(longitud) {
+    const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
+    let contrasena = '';
+
+    for (let i = 0; i < longitud; i++) {
+        let indiceAleatorio = Math.floor(Math.random()* caracteres.length)
+        contrasena += caracteres[indiceAleatorio]
+    }
+    return contrasena
+}
+console.log(generarContrasena(12))
